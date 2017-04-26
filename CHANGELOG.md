@@ -1,6 +1,11 @@
 ## Change Log
 
+### v2.0.2 (2017/04/26 23:12 +00:00)
+- [12aa524](https://github.com/Subterrane/calendar/commit/12aa524e7f0f12d86e552f2ae4e7baf8c031bfcc) maybe 32 days in a month is a bad idea (@Subterrane)
+- [63e6fee](https://github.com/Subterrane/calendar/commit/63e6fee1347171ab2bdc401c21032e0026da0889) update CHANGELOG (@Subterrane)
+
 ### v2.0.1 (2017/04/26 22:47 +00:00)
+- [2d60e78](https://github.com/Subterrane/calendar/commit/2d60e78409995fd2f1f59a0299d2eb9b7d6f647f) add screenshot (@Subterrane)
 - [0384be8](https://github.com/Subterrane/calendar/commit/0384be84a4edc02c8d1b3b7482af5cddfa8f1839) add screenshot (@Subterrane)
 - [6d585e9](https://github.com/Subterrane/calendar/commit/6d585e960322b51ee84cca3a6298e063e6883c3a) update CHANGELOG (@Subterrane)
 
