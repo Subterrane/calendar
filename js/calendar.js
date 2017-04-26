@@ -3,19 +3,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var calendarEl = document.getElementsByTagName('calendar')[0];
     var time = new Date();
     var month = time.getMonth();
+    var week = 1;
     var day = 1;
-    time.setDate(day);
-    var ix = 0;
-    while (ix++ < time.getDay()) {
-        calendarEl.appendChild(createDayElement());
-    }
+    var html = "<month number=\"" + (month + 1) + "\"><week number=\"" + week + "\">";
     do {
         time.setDate(day);
-        calendarEl.appendChild(createDayElement(day++));
-    } while (time.getMonth() === month);
+        if (time.getDay() % 7 === 0)
+            html += "</week><week number=\"" + ++week + "\">";
+        html += "<day number=\"" + day + "\"></day>";
+        day++;
+    } while (month === time.getMonth());
+    html += '</week></month>';
+    calendarEl.innerHTML = html;
 });
-function createDayElement(content) {
-    var el = document.createElement('day');
-    el.innerHTML = content || '';
-    return el;
-}

@@ -3,18 +3,23 @@ calendar {
     margin-top: 20px;
 }
 
+week {
+    display: flex;
+}
+
+week:first-child {
+    justify-content: flex-end;
+}
+
 day {
-    display: inline-block;
+    flex-basis: 14.3%;
     box-sizing: border-box;
-    width: 14%;
-    background-color: gray;
+    background-color: gainsboro;
     border: 1px solid white;
-    padding: 5px;
-    padding-bottom: 10%;
-    vertical-align: top;
+    padding: 5px 15px 15px 5px;
     color: white;
 }
 
-day:empty {
-    background-color: white;
+day::after {
+    content: attr(number);
 }
