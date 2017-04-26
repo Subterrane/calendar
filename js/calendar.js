@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var week = 1;
         var day = 1;
         var html = "<year number=\"" + y + "\"><month number=\"" + m + "\"><week number=\"" + week + "\">";
+        time.setDate(day);
         do {
-            time.setDate(day);
             if (time.getDay() % 7 === 0)
                 html += "</week><week number=\"" + ++week + "\">";
             html += "<day number=\"" + day + "\"></day>";
-            day++;
+            time.setDate(++day);
         } while (month === time.getMonth());
         html += '</week></month>';
         calendarEl.innerHTML = html;

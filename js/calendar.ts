@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", event => {
         let day = 1;
         let html = `<year number="${y}"><month number="${m}"><week number="${week}">`;
 
+        time.setDate(day);
+
         do {
-            time.setDate(day);
             if (time.getDay() % 7 === 0) html += `</week><week number="${++week}">`;
             html += `<day number="${day}"></day>`;
-            day++;
+            time.setDate(++day);
         } while (month === time.getMonth());
 
         html += '</week></month>'
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", event => {
     }
 
     let days = document.querySelectorAll('day');
-    for(let ix = 0; ix < days.length; ix++) {
+    for (let ix = 0; ix < days.length; ix++) {
         days[ix].addEventListener('click', dayClicked);
     }
 });
@@ -42,6 +43,6 @@ function dayClicked() {
         week: el.parentElement.getAttribute('number'),
         day: el.getAttribute('number')
     };
-    var event = new CustomEvent('calendarClicked', {'detail': data});
+    var event = new CustomEvent('calendarClicked', { 'detail': data });
     document.dispatchEvent(event);
 }
