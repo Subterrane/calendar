@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "changelog": "github-changes -o subterrane -r calendar -a --use-commit-body",
+    "version": "git push",
+    "postversion": "git push --tags && npm run changelog && git add CHANGELOG.md && git commit -m 'update CHANGELOG' && git push"
   },
   "repository": {
     "type": "git",
@@ -14,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Subterrane/calendar/issues"
   },
-  "homepage": "https://github.com/Subterrane/calendar#readme"
+  "homepage": "https://github.com/Subterrane/calendar#readme",
+  "devDependencies": {
+    "changelog": "^1.0.7",
+    "live-server": "^1.2.0",
+    "typescript": "^2.2.2"
+  }
 }

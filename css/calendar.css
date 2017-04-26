@@ -1,3 +1,20 @@
 calendar {
     display: block;
+    margin-top: 20px;
+}
+
+day {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 14%;
+    background-color: gray;
+    border: 1px solid white;
+    padding: 5px;
+    padding-bottom: 10%;
+    vertical-align: top;
+    color: white;
+}
+
+day:empty {
+    background-color: white;
 }
