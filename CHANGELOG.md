@@ -1,6 +1,11 @@
 ## Change Log
 
+### v2.0.1 (2017/04/26 22:47 +00:00)
+- [0384be8](https://github.com/Subterrane/calendar/commit/0384be84a4edc02c8d1b3b7482af5cddfa8f1839) add screenshot (@Subterrane)
+- [6d585e9](https://github.com/Subterrane/calendar/commit/6d585e960322b51ee84cca3a6298e063e6883c3a) update CHANGELOG (@Subterrane)
+
 ### v2.0.0 (2017/04/26 22:41 +00:00)
+- [1f5b7b3](https://github.com/Subterrane/calendar/commit/1f5b7b367bb96452e1ef1c8b67ba7e332ab9e5d3) works now (@Subterrane)
 - [8d6fcbd](https://github.com/Subterrane/calendar/commit/8d6fcbd84d5bf335b7f318a2c54e2fd6517d6abd) Update README.md (@Subterrane)
 - [5459039](https://github.com/Subterrane/calendar/commit/54590393990e38df45c86473a3dbce8d266c2673) . (@Subterrane)
 - [ead0176](https://github.com/Subterrane/calendar/commit/ead0176e32a8735df8c6a0f2c7fc31615bddf7fb) format (@Subterrane)
