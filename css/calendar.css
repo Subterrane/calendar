@@ -18,8 +18,13 @@ day {
     border: 1px solid white;
     padding: 5px 15px 15px 5px;
     color: white;
+    cursor: pointer;
 }
 
 day::after {
     content: attr(number);
+}
+
+.today {
+    background-color: gold;
 }
