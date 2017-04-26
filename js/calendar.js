@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     time.setDate(day);
     var ix = 0;
     while (ix++ < time.getDay()) {
-        calendarEl.appendChild(createDayElement(''));
+        calendarEl.appendChild(createDayElement());
     }
     do {
         time.setDate(day);
@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 function createDayElement(content) {
     var el = document.createElement('day');
-    el.innerHTML = content;
+    el.innerHTML = content || '';
     return el;
 }

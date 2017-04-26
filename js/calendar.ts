@@ -8,18 +8,17 @@ document.addEventListener("DOMContentLoaded", event => {
 
     let ix = 0;
     while (ix++ < time.getDay()) {
-        calendarEl.appendChild(createDayElement(''));
+        calendarEl.appendChild(createDayElement());
     }
 
     do {
         time.setDate(day);
         calendarEl.appendChild(createDayElement(day++));
     } while (time.getMonth() === month);
-
 });
 
-function createDayElement(content) {
+function createDayElement(content?) {
     let el = document.createElement('day')
-    el.innerHTML = content;
+    el.innerHTML = content || '';
     return el;
 }
