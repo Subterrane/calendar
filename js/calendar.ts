@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", event => {
     let calendarEl = document.getElementsByTagName('calendar')[0];
-    let time = new Date();
+    let now = new Date();
+
+    let y = parseInt(calendarEl.getAttribute('year')) || now.getFullYear();
+    let m = parseInt(calendarEl.getAttribute('month')) || now.getMonth();
+    let d = parseInt(calendarEl.getAttribute('day')) || now.getDate();
+
+    let time = new Date(y, --m, d);
     let month = time.getMonth();
     let week = 1;
     let day = 1;

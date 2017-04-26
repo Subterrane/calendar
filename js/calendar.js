@@ -1,7 +1,11 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function (event) {
     var calendarEl = document.getElementsByTagName('calendar')[0];
-    var time = new Date();
+    var now = new Date();
+    var y = parseInt(calendarEl.getAttribute('year')) || now.getFullYear();
+    var m = parseInt(calendarEl.getAttribute('month')) || now.getMonth();
+    var d = parseInt(calendarEl.getAttribute('day')) || now.getDate();
+    var time = new Date(y, --m, d);
     var month = time.getMonth();
     var week = 1;
     var day = 1;
