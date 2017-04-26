@@ -1,0 +1,15 @@
+## Change Log
+
+### v2.0.0 (2017/04/26 22:41 +00:00)
+- [8d6fcbd](https://github.com/Subterrane/calendar/commit/8d6fcbd84d5bf335b7f318a2c54e2fd6517d6abd) Update README.md (@Subterrane)
+- [5459039](https://github.com/Subterrane/calendar/commit/54590393990e38df45c86473a3dbce8d266c2673) . (@Subterrane)
+- [ead0176](https://github.com/Subterrane/calendar/commit/ead0176e32a8735df8c6a0f2c7fc31615bddf7fb) format (@Subterrane)
+- [581d9ec](https://github.com/Subterrane/calendar/commit/581d9ecf27f58ee29016b3d36d2a3b0712ee6d7f) add calendar to readme (@Subterrane)
+- [c3664db](https://github.com/Subterrane/calendar/commit/c3664db8b85400c721c3f35612a8fe9798067d92) make the padding scale with window size (@Subterrane)
+- [15e1e4d](https://github.com/Subterrane/calendar/commit/15e1e4d8b75091e2f2ab6705b37146fbd545b982) add custom 'calendarClicked' event, multiple calendar support, etc (@Subterrane)
+- [0a3bf6f](https://github.com/Subterrane/calendar/commit/0a3bf6fe87941dc8f484d2c10d9757fdf875bf6d) grab current date from calendar element (@Subterrane)
+- [b2a99a4](https://github.com/Subterrane/calendar/commit/b2a99a4429c6ab11c89d966eca0283520c10771a) add semantic days (@Subterrane)
+- [9e7da35](https://github.com/Subterrane/calendar/commit/9e7da35d66cc92307056d6a8e3a67f0548077af1) make content param optional (@Subterrane)
+- [c8970cc](https://github.com/Subterrane/calendar/commit/c8970cce0ac7c54cf3c1f8fec131ffa23c80c744) ugly, but works (@Subterrane)
+- [86304c5](https://github.com/Subterrane/calendar/commit/86304c520edb84e60f6c5fcf6247dd4a54efac4d) start (@Subterrane)
+- [4bb906e](https://github.com/Subterrane/calendar/commit/4bb906e7a12768283eaef44a869a0a46624145f9) Initial commit (@Subterrane)
