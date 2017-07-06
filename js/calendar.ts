@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", event => {
         let now = new Date();
 
         let y = parseInt(calendarEl.getAttribute('year')) || now.getFullYear();
-        let m = parseInt(calendarEl.getAttribute('month')) || now.getMonth();
+        let m = parseInt(calendarEl.getAttribute('month')) || now.getMonth() + 1;
         let d = parseInt(calendarEl.getAttribute('day')) || now.getDate();
 
         let time = new Date(y, m - 1, d);

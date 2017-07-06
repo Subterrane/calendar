@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var calendarEl = calendars[ix];
         var now = new Date();
         var y = parseInt(calendarEl.getAttribute('year')) || now.getFullYear();
-        var m = parseInt(calendarEl.getAttribute('month')) || now.getMonth();
+        var m = parseInt(calendarEl.getAttribute('month')) || now.getMonth() + 1;
         var d = parseInt(calendarEl.getAttribute('day')) || now.getDate();
         var time = new Date(y, m - 1, d);
         var month = time.getMonth();
